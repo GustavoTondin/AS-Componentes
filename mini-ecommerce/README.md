@@ -1,16 +1,51 @@
-# React + Vite
+# 🛒 Mini E-commerce com React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-Currently, two official plugins are available:
+Aplicação Front-end desenvolvida como parte da Avaliação Prática (AS). O projeto simula um pequeno e-commerce com gerenciamento de carrinho global, validação de estoque em tempo real e operações de CRUD (Criar, Ler, Atualizar, Deletar) de produtos consumindo uma API simulada.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Funcionalidades
 
-## React Compiler
+- **Listagem de Produtos:** Exibição dinâmica de produtos vindos da API.
+- **Detalhes do Produto:** Rota dinâmica (`/produto/:id`) com informações completas.
+- **Carrinho de Compras (Global):**
+  - Gerenciado via **Context API**.
+  - Adicionar, remover e alterar quantidade.
+  - Cálculo automático do total.
+- **Controle de Estoque Inteligente:**
+  - Bloqueio de adição caso o estoque seja 0.
+  - Validação para não permitir adicionar ao carrinho mais itens do que o disponível no estoque.
+- **Gestão de Produtos (CRUD):**
+  - Cadastro de novos produtos com validação de formulário.
+  - Edição de produtos existentes.
+  - Exclusão de produtos.
+  - Uso de **useRef** para focar automaticamente em campos inválidos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **React JS** (Vite)
+- **React Router Dom** (Navegação SPA)
+- **Context API** (Gerenciamento de Estado)
+- **Tailwind CSS** (Estilização)
+- **JSON Server** (API REST Simulada)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Como Rodar o Projeto
+
+Para rodar o projeto, você precisará de **dois terminais** abertos simultaneamente (um para o Back-end e outro para o Front-end).
+
+### Pré-requisitos
+- Node.js instalado.
+
+### Passo 1: Instalação
+Clone o repositório e instale as dependências:
+
+```bash
+# Entre na pasta do projeto
+cd mini-ecommerce
+
+# Instale as dependências
+npm install
