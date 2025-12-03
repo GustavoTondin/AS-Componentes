@@ -65,4 +65,4 @@ src/
 ├── App.jsx          # Configuração de Rotas
 └── main.jsx         # Ponto de entrada
 
-🔌 API Endpoints (JSON Server)A API roda em http://localhost:3000/products.MétodoEndpointDescriçãoGET/productsLista todos os produtosGET/products/:idRetorna um produto únicoPOST/productsCadastra um novo produtoPUT/products/:idAtualiza um produtoDELETE/products/:idRemove um produto
+
