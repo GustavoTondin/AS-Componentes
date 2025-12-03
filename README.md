@@ -50,7 +50,7 @@ cd mini-ecommerce
 # Instale as dependências
 npm install
 
-Passo 2: Rodar a API (Terminal 1)O JSON Server simulará o banco de dados. Mantenha este terminal aberto.Bashnpx json-server db.json --port 3000
+Passo 2: Rodar a API (Terminal 1)O JSON Server simulará o banco de dados. Mantenha este terminal aberto. npx json-server db.json --port 3000
 
 Passo 3: Rodar a Aplicação (Terminal 2)Inicie o servidor de desenvolvimento do Vite.
 npm run dev
