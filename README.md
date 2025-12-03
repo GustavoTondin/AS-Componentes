@@ -49,3 +49,20 @@ cd mini-ecommerce
 
 # Instale as dependências
 npm install
+
+Passo 2: Rodar a API (Terminal 1)O JSON Server simulará o banco de dados. Mantenha este terminal aberto.Bashnpx json-server db.json --port 3000
+
+Passo 3: Rodar a Aplicação (Terminal 2)Inicie o servidor de desenvolvimento do Vite.
+npm run dev
+
+Acesse o projeto em: http://localhost:5173
+
+📂 Estrutura do Projeto
+src/
+├── components/      # Componentes reutilizáveis (Navbar, etc.)
+├── context/         # Lógica do Carrinho (Context API)
+├── pages/           # Páginas da aplicação (Home, Carrinho, Detalhes...)
+├── App.jsx          # Configuração de Rotas
+└── main.jsx         # Ponto de entrada
+
+🔌 API Endpoints (JSON Server)A API roda em http://localhost:3000/products.MétodoEndpointDescriçãoGET/productsLista todos os produtosGET/products/:idRetorna um produto únicoPOST/productsCadastra um novo produtoPUT/products/:idAtualiza um produtoDELETE/products/:idRemove um produto
