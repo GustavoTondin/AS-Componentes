@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Tênis de Corrida",
+      "description": "Amortecimento de alta performance",
+      "price": 599.9,
+      "image": "https://placehold.co/400",
+      "stock": 5
+    },
+    {
+      "id": "2",
+      "name": "Camisa Térmica",
+      "description": "Mantém a temperatura corporal",
+      "price": 89.9,
+      "image": "https://placehold.co/400",
+      "stock": 10
+    },
+    {
+      "id": "3",
+      "name": "Garrafa de Água",
+      "description": "750ml, livre de BPA",
+      "price": 25,
+      "image": "https://placehold.co/400",
+      "stock": 10
+    }
+  ]
+}
